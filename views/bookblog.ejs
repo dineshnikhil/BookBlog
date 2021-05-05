@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+<%- include('partials/navbar'); -%>
+
+<div class="container-fluid book-div">
+    <h1><%= title %></h1>
+    <h3><%= author %></h3>
+    <p>Rating : <%= rating %> / 5</p>
+    <p><%= about %></p>
+    <br>
+    <a href="<%= readurl %>" target="_blank" class="btn">Read Now</a>
+    <a href="<%= buyurl %>" target="_blank" class="btn">Buy Now</a>
+</div>
+
+
+<%- include('partials/footer');  -%>

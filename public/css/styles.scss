@@ -1,0 +1,51 @@
+body {
+    background-color: #e7d4b5;
+    color: #334443 !important;
+}
+
+.btn {
+    background-color: #ffbc6a !important;
+    color: #334443;
+    &:hover {
+        background-color: #a0937d !important;
+    }
+}
+
+// navbar styling
+
+.navbar {
+    background-color: #a0937d !important;
+}
+
+
+// text area
+section {
+
+    .container-fluid {
+        padding: 10% 15% !important;
+    }
+
+    .card {
+        background-color: #f6e6cb;
+        margin: 5%;
+
+        img {
+            height: 250px;
+            width: auto;
+        }
+    }
+
+}
+
+.post-div {
+    padding: 10% 15% !important;
+}
+
+.book-div {
+    padding: 10% 15% !important;
+}
+
+.about-div {
+    padding: 10% 15% !important;
+}
+

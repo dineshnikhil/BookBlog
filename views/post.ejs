@@ -1,0 +1,31 @@
+<%- include('partials/header'); -%>
+<%- include('partials/navbar'); -%>
+
+<div class="container-fluid post-div">
+    <form action="/post" method="post">
+        <div class="mb-3">
+            <input type="text" name="title" class="form-control" placeholder="Book Title">
+        </div>
+        <div class="mb-3">
+            <input type="text" name="author" class="form-control" placeholder="Author Name">
+        </div>
+        <div class="mb-3">
+            <input type="text" name="rating" class="form-control" placeholder="Rating">
+        </div>
+        <div class="mb-3">
+            <input type="text" name="about" class="form-control" placeholder="About">
+        </div>
+        <div class="mb-3">
+            <input type="text" name="readurl" class="form-control" placeholder="Read Url">
+        </div>
+        <div class="mb-3">
+            <input type="text" name="buyurl" class="form-control" placeholder="Buy Url">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn">Add Book</button>
+        </div>
+    </form>
+    
+</div>
+
+<%- include('partials/footer');  -%>
