@@ -3,6 +3,91 @@ body {
   color: #334443 !important;
 }
 
+::-webkit-input-placeholder {
+  color: #8395a7 !important;
+  font-size: 1.3rem;
+}
+
+:-ms-input-placeholder {
+  color: #8395a7 !important;
+  font-size: 1.3rem;
+}
+
+::-ms-input-placeholder {
+  color: #8395a7 !important;
+  font-size: 1.3rem;
+}
+
+::placeholder {
+  color: #8395a7 !important;
+  font-size: 1.3rem;
+}
+
+::-webkit-input-placeholder:focus {
+  color: #3d3d3d !important;
+}
+
+:-ms-input-placeholder:focus {
+  color: #3d3d3d !important;
+}
+
+::-ms-input-placeholder:focus {
+  color: #3d3d3d !important;
+}
+
+::placeholder:focus {
+  color: #3d3d3d !important;
+}
+
+input[type="text"] {
+  color: #3d3d3d;
+  margin-bottom: 3%;
+  font-size: 1.3rem;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #8395a7;
+}
+
+input[type="text"]:focus {
+  color: #3d3d3d;
+  background: transparent;
+  border-bottom: 3px solid #3d3d3d;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+input:focus::-ms-input-placeholder {
+  color: transparent !important;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
+input:focus::placeholder {
+  color: transparent !important;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
+}
+
 .btn {
   background-color: #ffbc6a !important;
   color: #334443;
@@ -39,6 +124,10 @@ section .card img {
 }
 
 .about-div {
+  padding: 10% 15% !important;
+}
+
+.genre-div {
   padding: 10% 15% !important;
 }
 /*# sourceMappingURL=styles.css.map */

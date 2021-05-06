@@ -3,6 +3,42 @@ body {
     color: #334443 !important;
 }
 
+$font_color : #3d3d3d;
+$royal_color : #8395a7;
+
+//  ================= form styling =============
+
+::placeholder{
+    color: $royal_color!important;
+    font-size: 1.3rem;
+    &:focus{
+        color: $font_color!important;
+    }
+}
+
+input[type="text"]{
+    color: $font_color;
+    margin-bottom: 3%;
+    font-size: 1.3rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid $royal_color;
+}
+
+input[type="text"]:focus{
+    color: $font_color;
+    background: transparent;
+    border-bottom: 3px solid $font_color;
+    box-shadow: none;
+}
+
+
+input:focus::placeholder{
+    color: transparent!important;
+    transition: transform 2s ease-in-out;
+}
+
+
 .btn {
     background-color: #ffbc6a !important;
     color: #334443;
@@ -46,6 +82,10 @@ section {
 }
 
 .about-div {
+    padding: 10% 15% !important;
+}
+
+.genre-div {
     padding: 10% 15% !important;
 }
 

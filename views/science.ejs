@@ -1,0 +1,37 @@
+<%- include('partials/header'); -%>
+<%- include('partials/navbar'); -%>
+
+  <section>
+    <div class="container-fluid">
+      <h1>Best Science Books to Read</h1>
+      <p><%=  quote  %></p>
+      <div class="row">
+
+        <%  books.forEach(function(book) {  %>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"><%= book.title %></h5>
+                <h6>by - <%= book.author %></h6>
+                <p>Rating : <%= book.rating  %> / 5</p>
+                <p class="card-text"><%= book.about.substring(0, 158) %>... <a href="/bookblog/<%= book.title %>">Read more</a> </p>
+                <a href="<%= book.readurl %>" target="_blank" class="btn">Read Now</a>
+                <a href="<%= book.buyurl %>" target="_blank" class="btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        <%  })  %>
+
+        
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+<%- include('partials/footer');  -%>
+

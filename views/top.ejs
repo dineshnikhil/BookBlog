@@ -1,0 +1,112 @@
+<%- include('partials/header'); -%>
+<%- include('partials/navbar'); -%>
+
+  <section>
+    <div class="container-fluid">
+      <h1>Top Reated Books</h1>
+      <br>
+      <p><%=  quote  %></p>
+      <br>
+      <hr>
+      <br>
+      <h3>Top 3 self help books</h3>
+      <br>
+      <div class="row">
+
+        <%  topselfhelpbooks.forEach(function(book) {  %>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"><%= book.title %></h5>
+                <h6>by - <%= book.author %></h6>
+                <p>Rating : <%= book.rating  %> / 5</p>
+                <p class="card-text"><%= book.about.substring(0, 158) %>... <a href="/bookblog/<%= book.title %>">Read more</a> </p>
+                <a href="<%= book.readurl %>" target="_blank" class="btn">Read Now</a>
+                <a href="<%= book.buyurl %>" target="_blank" class="btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        <%  })  %>
+
+      </div>
+      <br>
+      <br>
+      <h3>Top 3 productive books</h3>
+      <br>
+      <div class="row">
+
+        <%  topproductivebooks.forEach(function(book) {  %>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"><%= book.title %></h5>
+                <h6>by - <%= book.author %></h6>
+                <p>Rating : <%= book.rating  %> / 5</p>
+                <p class="card-text"><%= book.about.substring(0, 158) %>... <a href="/bookblog/<%= book.title %>">Read more</a> </p>
+                <a href="<%= book.readurl %>" target="_blank" class="btn">Read Now</a>
+                <a href="<%= book.buyurl %>" target="_blank" class="btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        <%  })  %>
+
+      </div>
+      <br>
+      <br>
+      <h3>Top 3 biography books</h3>
+      <br>
+      <div class="row">
+
+        <%  topbiographybooks.forEach(function(book) {  %>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"><%= book.title %></h5>
+                <h6>by - <%= book.author %></h6>
+                <p>Rating : <%= book.rating  %> / 5</p>
+                <p class="card-text"><%= book.about.substring(0, 158) %>... <a href="/bookblog/<%= book.title %>">Read more</a> </p>
+                <a href="<%= book.readurl %>" target="_blank" class="btn">Read Now</a>
+                <a href="<%= book.buyurl %>" target="_blank" class="btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        <%  })  %>
+
+      </div>
+      <br>
+      <br>
+      <h3>Top 3 science books</h3>
+      <br>
+      <div class="row">
+
+        <%  topsciencebooks.forEach(function(book) {  %>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"><%= book.title %></h5>
+                <h6>by - <%= book.author %></h6>
+                <p>Rating : <%= book.rating  %> / 5</p>
+                <p class="card-text"><%= book.about.substring(0, 158) %>... <a href="/bookblog/<%= book.title %>">Read more</a> </p>
+                <a href="<%= book.readurl %>" target="_blank" class="btn">Read Now</a>
+                <a href="<%= book.buyurl %>" target="_blank" class="btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        <%  })  %>
+
+      </div>
+
+    </div>
+  </section>
+
+
+<%- include('partials/footer');  -%>
+

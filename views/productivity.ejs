@@ -1,0 +1,55 @@
+<%- include('partials/header'); -%>
+<%- include('partials/navbar'); -%>
+
+
+<section>
+
+
+    <div class="container-fluid genre-div">
+        <h1>The Best Books on Productivity You Should Read</h1>
+        <br>
+        <hr>
+        <br>
+        <p><%= quote %></p>
+        <br>
+        <hr>
+        <p>The year that you finally boost your productivity skills? Deciding to be more productive is a common New Year’s Resolution but one that is difficult to achieve.
+        </p>
+        <p>Productivity and being productive can mean different things to different people. It will depend on what you ultimately want to accomplish. There are literally thousands of books on the subject.</p>
+        <p>To help you, we’ve compiled a list of 10 of the most highly recommended books on productivity to help you get more done this year!</p>
+        <br>
+        <br>
+
+
+        <!-- =============  cards sections ================ -->
+
+        <div class="row">
+
+            <%  probooks.forEach(function(book) {  %>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><%= book.title %></h5>
+                    <h6>by - <%= book.author %></h6>
+                    <p>Rating : <%= book.rating  %> / 5</p>
+                    <p class="card-text"><%= book.about.substring(0, 140) %>... <a href="/bookblog/<%= book.title %>">Read more</a> </p>
+                    <a href="<%= book.readurl %>" target="_blank" class="btn">Read Now</a>
+                    <a href="<%= book.buyurl %>" target="_blank" class="btn">Buy Now</a>
+                </div>
+                </div>
+            </div>
+
+            <%  })  %>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+<%- include('partials/footer');  -%>
